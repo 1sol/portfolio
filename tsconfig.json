@@ -21,7 +21,8 @@
       "@pages/*": ["pages/*"],
       "@routes/*": ["routes/*"],
       "@styles/*": ["styles/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "node:path": ["path"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
