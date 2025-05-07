@@ -206,7 +206,7 @@ export const licenseData = [
 
 export const historyData = [
   {
-    label: "2021~현재",
+    label: "2021~2024",
     title: "(주)에이아이투유",
     subTitle: "웹/앱 프론트엔드 개발",
   },

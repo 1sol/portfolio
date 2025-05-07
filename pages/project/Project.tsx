@@ -25,7 +25,7 @@ const ProjectContainer = styled.div`
   .sub-title,
   h3,
   p {
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }: any) => theme.colors.white};
   }
 `;
 

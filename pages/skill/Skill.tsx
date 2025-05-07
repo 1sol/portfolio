@@ -20,7 +20,7 @@ const SkillContainer = styled.div`
       box-shadow: inset 0 -8px 0 #cb80dc78;
       width: fit-content;
       font-size: 16px;
-      font-weight: ${({ theme }) => theme.fontWeight.font600};
+      font-weight: ${({ theme }: any) => theme.fontWeight.font600};
     }
 
     .skill-box {
@@ -35,15 +35,15 @@ const SkillContainer = styled.div`
 
       .inner {
         height: 30px;
-        ${({ theme }) => theme.common.flex};
-        ${({ theme }) => theme.common.flexVerticalCenter};
+        ${({ theme }: any) => theme.common.flex};
+        ${({ theme }: any) => theme.common.flexVerticalCenter};
       }
     }
   }
 
   .ant-progress {
     display: flex;
-    ${({ theme }) => theme.common.flexVerticalCenter};
+    ${({ theme }: any) => theme.common.flexVerticalCenter};
 
     &-text {
       font-size: 12px;

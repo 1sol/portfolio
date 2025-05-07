@@ -10,7 +10,7 @@ const AboutContainer = styled.div`
   background-color: #6fb8b7;
 
   .sub-title {
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }: any) => theme.colors.white};
   }
 
   .about {
@@ -18,22 +18,22 @@ const AboutContainer = styled.div`
 
     h3 {
       margin-bottom: 0;
-      font-weight: ${({ theme }) => theme.fontWeight.font600};
+      font-weight: ${({ theme }: any) => theme.fontWeight.font600};
       font-size: 25px;
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }: any) => theme.colors.white};
     }
     h4 {
       font-weight: normal;
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }: any) => theme.colors.white};
       font-size: 16px;
     }
     h5 {
       font-size: 17px;
       font-weight: normal;
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }: any) => theme.colors.white};
       span {
-        font-weight: ${({ theme }) => theme.fontWeight.font600};
-        color: ${({ theme }) => theme.colors.white};
+        font-weight: ${({ theme }: any) => theme.fontWeight.font600};
+        color: ${({ theme }: any) => theme.colors.white};
       }
     }
   }

@@ -13,16 +13,16 @@ const Intro = styled.div`
 
   .section {
     min-height: 100vh;
-    ${({ theme }) => theme.common.flexAlignCenter};
-    ${({ theme }) => theme.common.flexColumn};
+    ${({ theme }: any) => theme.common.flexAlignCenter};
+    ${({ theme }: any) => theme.common.flexColumn};
   }
 
   .section-intro {
-    background-color: ${({ theme }) => theme.colors.black};
+    background-color: ${({ theme }: any) => theme.colors.black};
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    ${({ theme }) => theme.common.flexAlignCenter};
+    ${({ theme }: any) => theme.common.flexAlignCenter};
     text-align: center;
   }
 
@@ -53,10 +53,10 @@ const MainPage = () => {
           </div>
         </Intro>
 
-        <About id="1" />
-        <History id="2" />
-        <Project id="3" />
-        <Skill id="4" />
+        <About />
+        <History />
+        <Project />
+        <Skill />
       </Main>
     </Layout>
   );
