@@ -2,6 +2,7 @@
 
 const debug = process.env.NODE_ENV !== "production";
 const repository = "https://1sol.github.io/portfolio";
+const path = require('node:path');
 
 const nextConfig = {
   reactStrictMode: true,
