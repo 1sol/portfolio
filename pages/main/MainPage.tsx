@@ -53,10 +53,10 @@ const MainPage = () => {
           </div>
         </Intro>
 
-        <About />
-        <History />
-        <Project />
-        <Skill />
+        <About id="1" />
+        <History id="2" />
+        <Project id="3" />
+        <Skill id="4" />
       </Main>
     </Layout>
   );
