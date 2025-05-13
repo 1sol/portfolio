@@ -1,16 +1,17 @@
 import { useEffect } from "react";
+import Link from 'next/link';
 import { Tag } from "antd";
 import styled from "styled-components";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { motionVariants } from "config/dataConfigs";
 
-const AboutContainer = styled.div`
+const AboutContainer = styled.div<any>`
   position: relative;
   background-color: #6fb8b7;
 
   .sub-title {
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }: any) => theme.colors.white};
   }
 
   .about {
@@ -18,22 +19,22 @@ const AboutContainer = styled.div`
 
     h3 {
       margin-bottom: 0;
-      font-weight: ${({ theme }) => theme.fontWeight.font600};
+      font-weight: ${({ theme }: any) => theme.fontWeight.font600};
       font-size: 25px;
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }: any) => theme.colors.white};
     }
     h4 {
       font-weight: normal;
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }: any) => theme.colors.white};
       font-size: 16px;
     }
     h5 {
       font-size: 17px;
       font-weight: normal;
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }: any) => theme.colors.white};
       span {
-        font-weight: ${({ theme }) => theme.fontWeight.font600};
-        color: ${({ theme }) => theme.colors.white};
+        font-weight: ${({ theme }: any) => theme.fontWeight.font600};
+        color: ${({ theme }: any) => theme.colors.white};
       }
     }
   }
@@ -61,7 +62,7 @@ const About = () => {
   }, [control, inView]);
 
   return (
-    <AboutContainer id="1" className="about">
+    <AboutContainer id="about" className="about">
       <div className="inner">
         <div className="section contents-wrap">
           <div className="title-box">
@@ -88,7 +89,7 @@ const About = () => {
                   프론트엔드 개발자 김한솔 입니다.
                   <br />
                   웹 퍼블리셔로 업무를 하던 중 개발에 대해 더 깊게 공부하고자
-                  하는 욕심이 생겨, <br />그 길로 개발 공부를 하게 되었고 현재
+                  하는 욕심이 생겨, <br />그 길로 개발 공부를 하게 되었고
                   웹 프론트엔드 개발자로 근무하며
                   <br /> 개발자로서 더 멋진 성장을 꿈꾸고 있습니다.
                 </h5>

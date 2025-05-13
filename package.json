@@ -8,7 +8,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy -d gh-pages'"
+    "deploy": "next build && touch out/.nojekyll && git add -f out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@types/react-slick": "^0.23.10",
@@ -36,5 +36,18 @@
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0",
     "typescript": "4.8.4"
+  },
+  "resolutions": {
+    "@types/react": "^18.0.23",
+    "styled-components": "^5.3.6",
+    "@types/styled-components": "^5.1.26",
+    "react": "18.2.0",
+    "typescript": "4.8.4",
+    "@types/node": "18.11.5",
+    "react-dom": "18.2.0",
+    "@types/react-dom": "18.0.7",
+    "react-slick": "^0.29.0",
+    "@types/react-slick": "^0.23.10",
+    "antd": "^4.23.6"
   }
 }

@@ -11,15 +11,15 @@ const HeaderContainer = styled.header`
     transition: all 0.2s ease-in-out;
 
     ul {
-      ${({ theme }) => theme.common.flexAlignCenter};
+      ${({ theme }: any) => theme.common.flexAlignCenter};
       margin: 0;
 
       li {
         width: calc(100% / 5);
-        ${({ theme }) => theme.align.center};
+        ${({ theme }: any) => theme.align.center};
 
         a {
-          color: ${({ theme }) => theme.colors.black};
+          color: ${({ theme }: any) => theme.colors.black};
           transition: all 0.3s ease-in-out;
           font-size: 16px;
         }
@@ -47,7 +47,7 @@ const HeaderContainer = styled.header`
         width: 100%;
         height: 3px;
         border-radius: 15px;
-        background-color: ${({ theme }) => theme.colors.black};
+        background-color: ${({ theme }: any) => theme.colors.black};
         transition: all 0.3s ease-in-out;
 
         &:first-child {
@@ -65,7 +65,7 @@ const HeaderContainer = styled.header`
 
       .open {
         span {
-          background-color: ${({ theme }) => theme.colors.white};
+          background-color: ${({ theme }: any) => theme.colors.white};
           &:first-child {
             top: 50%;
             transform: translateY(-50%) rotate(45deg);
@@ -81,14 +81,14 @@ const HeaderContainer = styled.header`
       }
     }
 
-    @media ${({ theme }) => theme.device.desktop} {
+    @media ${({ theme }: any) => theme.device.desktop} {
       nav {
         position: fixed;
         left: 0;
         top: 0;
         width: 100%;
         height: 0;
-        background: ${({ theme }) => theme.colors.black};
+        background: ${({ theme }: any) => theme.colors.black};
         overflow: hidden;
         z-index: 990;
         transition: all 0.3s ease-in 0.2s;
@@ -113,31 +113,31 @@ const HeaderContainer = styled.header`
               }
               transition: 0s;
               font-size: 25px;
-              font-weight: ${({ theme }) => theme.fontWeight.bold};
-              color: ${({ theme }) => theme.colors.white};
+              font-weight: ${({ theme }: any) => theme.fontWeight.bold};
+              color: ${({ theme }: any) => theme.colors.white};
             }
           }
         }
       }
 
       .menu {
-        ${({ theme }) => theme.common.flex};
-        ${({ theme }) => theme.common.flexEnd};
+        ${({ theme }: any) => theme.common.flex};
+        ${({ theme }: any) => theme.common.flexEnd};
       }
     }
   }
 
   .header-wrap.scroll {
-    background-color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }: any) => theme.colors.white};
     box-shadow: 0 2px 20px 0 rgb(0 0 0 / 5%);
   }
 
   .ant-tabs-nav-wrap {
-    ${({ theme }) => theme.common.flexHorizontalCenter};
+    ${({ theme }: any) => theme.common.flexHorizontalCenter};
   }
 
   .ant-tabs-content {
-    ${({ theme }) => theme.common.flexAlignCenter};
+    ${({ theme }: any) => theme.common.flexAlignCenter};
   }
 
   .ant-col {
@@ -145,7 +145,7 @@ const HeaderContainer = styled.header`
   }
 
   .ant-col-6 {
-    ${({ theme }) => theme.align.center};
+    ${({ theme }: any) => theme.align.center};
     line-height: 48px;
   }
 `;
@@ -194,19 +194,19 @@ const Header = () => {
         <nav className={`${isVisible ? "open" : ""}`}>
           <ul>
             <li>
-              <a href="0">HOME</a>
+              <a href="#intro">HOME</a>
             </li>
             <li>
-              <a href="1">ABOUT</a>
+              <a href="#about">ABOUT</a>
             </li>
             <li>
-              <a href="2">TIMELINE</a>
+              <a href="#timeline">TIMELINE</a>
             </li>
             <li>
-              <a href="3">SKILL</a>
+              <a href="#skill">SKILL</a>
             </li>
             <li>
-              <a href="4">PROJECT</a>
+              <a href="#project">PROJECT</a>
             </li>
           </ul>
         </nav>

@@ -1,13 +1,18 @@
 export const projectData = [
   {
-    title: "SDOC(스닥) 웹앱 운영 및 기능 추가 개발(~ing)",
-    date: "(주)에이아이투유 / 2023",
+    title: "피부 관련 상품 판매 서비스 '스닥스토어' 웹앱 개발",
+    date: "(주)에이아이투유 / 2024",
+    description: "프론트엔드 개발(React(Vite))",
+  },
+  {
+    title: "피부 시술 비교 서비스 '촉촉박사' 웹앱 개발",
+    date: "(주)에이아이투유 / 2023~2024",
     description: "프론트엔드 개발(Ionic React, PWA)",
   },
   {
-    title: "여드름 관련 차기작 서비스 준비",
+    title: "SDOC(스닥) 웹앱 운영 및 기능 추가 개발",
     date: "(주)에이아이투유 / 2023",
-    description: "프론트엔드 개발(Next.js, PWA)",
+    description: "프론트엔드 개발(Ionic React, PWA)",
   },
   {
     title: "피부 분석 서비스 SDOC(스닥) 웹앱 개발",
@@ -201,7 +206,7 @@ export const licenseData = [
 
 export const historyData = [
   {
-    label: "2021~현재",
+    label: "2021~2024",
     title: "(주)에이아이투유",
     subTitle: "웹/앱 프론트엔드 개발",
   },

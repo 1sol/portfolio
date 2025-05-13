@@ -11,7 +11,6 @@ const nextConfig = {
   },
   assetPrefix: !debug ? `${repository}/` : "",
   trailingSlash: true,
-  pageExtensions: ["configs.ts"],
 };
 
 module.exports = nextConfig;

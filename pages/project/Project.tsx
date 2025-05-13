@@ -7,7 +7,7 @@ import { motionVariants, projectData, sliderSetting } from "config/dataConfigs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ProjectContainer = styled.div`
+const ProjectContainer = styled.div<any>`
   background-color: #6fb8b7;
 
   .section {
@@ -25,7 +25,7 @@ const ProjectContainer = styled.div`
   .sub-title,
   h3,
   p {
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }: any) => theme.colors.white};
   }
 `;
 
@@ -42,7 +42,7 @@ const Project = () => {
   }, [control, inView]);
 
   return (
-    <ProjectContainer id="4" className="project">
+    <ProjectContainer id="project" className="project">
       <div className="inner">
         <motion.div
           ref={ref}
@@ -56,7 +56,7 @@ const Project = () => {
                 <h2 className="sub-title">PROJECT</h2>
               </div>
               <div className="slider">
-                <Slider {...sliderSetting}>
+                {/* <Slider {...sliderSetting}>
                   {projectData.map((item, index) => (
                     <div key={index}>
                       <div className="default-item">
@@ -73,7 +73,7 @@ const Project = () => {
                       </div>
                     </div>
                   ))}
-                </Slider>
+                </Slider> */}
               </div>
             </div>
           </div>

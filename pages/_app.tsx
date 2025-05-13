@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import type { AppProps } from "next/app";
+import { AppProps } from "next/app";
 import theme from "../utils";
 import { Provider } from "../context/context";
 import { prefix } from "../config/config";

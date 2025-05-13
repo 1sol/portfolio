@@ -8,21 +8,21 @@ import Project from "../project";
 
 const Main = styled.div``;
 
-const Intro = styled.div`
+const Intro = styled.div<any>`
   background-color: #6fb8b72b;
 
   .section {
     min-height: 100vh;
-    ${({ theme }) => theme.common.flexAlignCenter};
-    ${({ theme }) => theme.common.flexColumn};
+    ${({ theme }: any) => theme.common.flexAlignCenter};
+    ${({ theme }: any) => theme.common.flexColumn};
   }
 
   .section-intro {
-    background-color: ${({ theme }) => theme.colors.black};
+    background-color: ${({ theme }: any) => theme.colors.black};
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    ${({ theme }) => theme.common.flexAlignCenter};
+    ${({ theme }: any) => theme.common.flexAlignCenter};
     text-align: center;
   }
 
@@ -37,7 +37,7 @@ const MainPage = () => {
   return (
     <Layout>
       <Main>
-        <Intro id="0">
+        <Intro id="intro">
           <div className="section">
             <motion.div
               animate={{ scale: [1, 1.5, 1.1] }}

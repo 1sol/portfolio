@@ -10,7 +10,7 @@ import {
   motionVariants,
 } from "config/dataConfigs";
 
-const HistoryContainer = styled.div`
+const HistoryContainer = styled.div<any>`
   position: relative;
 
   .section-contents {
@@ -26,7 +26,7 @@ const HistoryContainer = styled.div`
 
     h3 {
       margin-bottom: 5px;
-      font-weight: ${({ theme }) => theme.fontWeight.font600};
+      font-weight: ${({ theme }: any) => theme.fontWeight.font600};
       font-size: 25px;
     }
     h4 {
@@ -37,22 +37,22 @@ const HistoryContainer = styled.div`
       font-size: 17px;
       font-weight: normal;
       span {
-        font-weight: ${({ theme }) => theme.fontWeight.font600};
+        font-weight: ${({ theme }: any) => theme.fontWeight.font600};
       }
     }
   }
 
   .timeline {
     p {
-      font-weight: ${({ theme }) => theme.fontWeight.font500};
+      font-weight: ${({ theme }: any) => theme.fontWeight.font500};
       font-size: 17px;
     }
     span {
       display: block;
       margin-top: 5px;
       font-size: 14px;
-      font-weight: ${({ theme }) => theme.fontWeight.font400};
-      color: ${({ theme }) => theme.colors.darkGray};
+      font-weight: ${({ theme }: any) => theme.fontWeight.font400};
+      color: ${({ theme }: any) => theme.colors.darkGray};
     }
   }
 `;
@@ -70,7 +70,7 @@ const History = () => {
   }, [control, inView]);
 
   return (
-    <HistoryContainer id="2" className="history">
+    <HistoryContainer id="timeline" className="history">
       <div className="inner">
         <motion.div
           ref={ref}
@@ -81,7 +81,7 @@ const History = () => {
           <div className="section">
             <div className="contents-wrap">
               <div className="title-box">
-                <h2 className="sub-title">HISTORY</h2>
+                <h2 className="sub-title">TIMELINE</h2>
               </div>
               <div className="section-contents">
                 <div>
