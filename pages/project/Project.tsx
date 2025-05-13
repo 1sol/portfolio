@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -32,6 +32,7 @@ const ProjectContainer = styled.div<any>`
 const Project = () => {
   const [ref, inView] = useInView();
   const control = useAnimation();
+  const sliderRef = useRef<any>(null);
 
   useEffect(() => {
     if (inView) {
@@ -56,7 +57,7 @@ const Project = () => {
                 <h2 className="sub-title">PROJECT</h2>
               </div>
               <div className="slider">
-                {/* <Slider {...sliderSetting}>
+                <Slider {...sliderSetting} ref={sliderRef}>
                   {projectData.map((item, index) => (
                     <div key={index}>
                       <div className="default-item">
@@ -73,7 +74,7 @@ const Project = () => {
                       </div>
                     </div>
                   ))}
-                </Slider> */}
+                </Slider>
               </div>
             </div>
           </div>
